@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+
+        .card{
+            border: 2px solid red;
+            width: 20%;
+        }
+        /* <!-- flex is applied on the parent of the element on which we want to apply --> */
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="card">
+        <h3 class="form-title">Login Form</h3>
+
+        <form>
+            <label for="email">Email Address</label>
+            <input class="text-input" type="email" id="email">
+
+            <label for="password">Password</label>
+            <input  class="text-input" type="password" id="password">
+
+            <button class="submit-btn">Submit</button>
+
+        </form>
+    </div>
+</body>
+</html>
