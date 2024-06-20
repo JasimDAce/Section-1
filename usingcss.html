@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 200vh;
+            /* it will increase the height of the page by 2 times of screen */
+        }
+        h3{
+            background-color: crimson;
+            color: white;
+            font-size: 30px;
+            border: 2px solid yellow; /* These properties are known as shortHand */
+        }
+
+        .my-class{
+            text-align: right;
+            color: blue;
+            font-size: 50px;
+            text-decoration: underline;
+        }
+        #my-id{
+            color: green;
+        }
+        #my-id2{
+            font-size: 40px;
+        }
+        button{
+            background-color: blue; 
+            /* !important has the most priority more than ID and inline css */
+            color: white;
+            padding: 10px;
+            border: none;
+        }
+        .my-btn{
+            background-color: red;
+        }
+        #submit-btn{
+            background-color: aqua;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button class="move-top-btn">Top</button>
+    <p style="font-size: 50px; text-align: center; color: red;">Inline css is used to style individual tags at once</p>
+
+
+    <h3>Internal css is used to style entire webpage at once</h3>
+
+    <h3>Name selector is used to select elements by their tag name</h3>
+
+    <h4 class="my-class">Class Selector is used to select elements by their class name</h4><!-- dash is used because we use space for adding new class -->
+
+    <h1 class="my-class">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</h1>
+
+    <h2 id="my-id my-id2">Id Selector is used to select elements by their id name</h2>
+
+    <button class = "my-btn" id="submit-btn" style="background-color: black;">CSS Priorities</button>
+</body>
+</html>
