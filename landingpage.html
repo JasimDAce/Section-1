@@ -56,14 +56,16 @@
         }
         section{
             padding: 5% 10%;
-            text-align: center;
+            
         }
 
         .section-title{
             font-size: 40px;
+            text-align: center;
         }
         .section-subtitle{
             font-size: 20px;
+            text-align: center;
         }
 
         .card-container{
@@ -91,6 +93,39 @@
             background-color: var(--theme-color-dark);
             box-shadow: 2px 2px 5px #00000079;
             transform: translateY(-10px);
+        }
+        .service{
+            border: 2px solid darkgreen;
+            display: grid;
+            align-items: center;
+            margin-bottom: 30px;
+            /* fr is the fraction unit which divides the column */
+        }
+        .service1{
+            grid-template-columns: 1fr 2fr;
+        }
+        .service3{
+            grid-template-columns: repeat(4,1fr);
+        }
+        .service2{
+            grid-template-columns: 2fr 1fr;
+        }
+        .service3 .service-content{
+            order: 1;
+        }
+        .service3 .service-image{
+            order: 2;
+        }
+        .service-image{
+            /* border: 2px solid crimson; */
+
+        }
+        .service-content{
+            /* border: 2px solid #002b57; */
+            padding: 30px;
+        }
+        .service-content h1{
+            font-size: 30px;
         }
     </style>
     <link href="https://fonts.googleapis.com/css?family=Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic" rel="stylesheet" />
@@ -132,6 +167,50 @@
                     <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Est aut perspiciatis dolorem sed expedita reiciendis, ipsa sapiente blanditiis similique quasi, obcaecati eum tempore necessitatibus corporis. Adipisci laboriosam ex dolores dolore.</p>
                 </div>
 
+            </div>
+        </section>
+
+        <section class="section-services">
+
+            
+            <div class="service service1">
+                <div class="service-image">
+                    <img src="undraw_Mobile_payments_re_7udl.png"  width="100%" alt="">
+                </div> 
+                <div class="service-content">
+                    <h1>First Service Title</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, voluptate impedit quae culpa, quo architecto inventore sit unde modi expedita tempore ipsa aspernatur. Autem, nesciunt. Maiores saepe earum facilis aperiam.</p>
+                    <button class="btn btn-main">Read More</button>
+                </div>
+            </div>
+            <div class="service service2">
+                
+                <div class="service-content">
+                    <h1>First Service Title</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, voluptate impedit quae culpa, quo architecto inventore sit unde modi expedita tempore ipsa aspernatur. Autem, nesciunt. Maiores saepe earum facilis aperiam.</p>
+                    <button class="btn btn-main">Read More</button>
+                </div>
+                <div class="service-image">
+                    <img src="undraw_Mobile_payments_re_7udl.png"  width="100%" alt="">
+                </div> 
+            </div>
+            <div class="service service3">
+                <div class="service-image">
+                    <img src="undraw_Mobile_payments_re_7udl.png"  width="100%" alt="">
+                </div> 
+                <div class="service-content">
+                    <h1>First Service Title</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, voluptate impedit quae culpa, quo architecto inventore sit unde modi expedita tempore ipsa aspernatur. Autem, nesciunt. Maiores saepe earum facilis aperiam.</p>
+                    <button class="btn btn-main">Read More</button>
+                </div>
+                <div class="service-image">
+                    <img src="undraw_Mobile_payments_re_7udl.png"  width="100%" alt="">
+                </div> 
+                <div class="service-content">
+                    <h1>First Service Title</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat, voluptate impedit quae culpa, quo architecto inventore sit unde modi expedita tempore ipsa aspernatur. Autem, nesciunt. Maiores saepe earum facilis aperiam.</p>
+                    <button class="btn btn-main">Read More</button>
+                </div>
             </div>
         </section>
     </article>
