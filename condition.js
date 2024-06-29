@@ -11,3 +11,8 @@ console.log(something)
 // console.log(n);
 // var if we define in function then it will behave like local variable else global varibale
 console.log( 2 ** 4)
+
+
+
+
+
