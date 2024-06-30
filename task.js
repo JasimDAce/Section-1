@@ -6,81 +6,41 @@
 // 5. WAP to check if a number is divisible by 7 and 11
 
 //solution 1:
-
 let n = 88;
-if(n>= 70 &&  n<=120){
+if(n>= 70 &&  n<=120)
     console.log(`Yes ${n}, Exist between 70 and 120`);
-}
-else{
+else
     console.log(`No ${n}, Does not exists between 70 and 120`);
-}
-
 //Solution 2:
 let age = 17;
-if(age>17){
+if(age>17)
     console.log('Yes, He is eligible for DL.');
-}
-else{
+else
     console.log('NO, He is not eligible for DL.');
-}
-
-
 //solution 3
 let num1 = 11;
 let num2 = 18;
 let num3 = 7;
-
 if(num1 > num2){
-    if(num1 > num3){
+    if(num1 > num3)
         console.log(`${num1} is the greatest number amongs the three numbers`);
-    }
-    else{
+    else
         console.log(`${num3} is the greatest number amongs the three numbers`);
-    }
 }
-else {
+else 
     console.log(`${num2} is the greatest number amongs the three numbers`);
-}
-
-
 // Solution 4:
-
-
-//choosing a perfect square number.
 let perfectSquare = 16;
-
-
 let perfectSquareNumber = Math.sqrt(perfectSquare);
-
-if((perfectSquareNumber % 1) === 0){
+if((perfectSquareNumber % 1) === 0)
     console.log(`${perfectSquare}, is a perfect square`);
-}
-else{
+else
     console.log(`${perfectSquare}, is not a perfect square`);
-}
-
-//choosing not a perfect square number
-let perfectSquare2 = 27;
-
-
-let perfectSquareNumber2 = Math.sqrt(perfectSquare2);
-
-if((perfectSquareNumber2 % 1) === 0){
-    console.log(`${perfectSquare2}, is a perfect square`);
-}
-else{
-    console.log(`${perfectSquare2}, is not a perfect square`);
-}
-
 //solution 5
-
 let num4 = 77;
-
 if(num4%7 === 0){
-    if(num4%11 === 0){
+    if(num4%11 === 0)
         console.log(`Yes ${num4}, is divisible by 7 and 11`);
-    }
 }
-else{
+else
     console.log(`No ${num4}, is not divisible by 7 and 11`);
-}
