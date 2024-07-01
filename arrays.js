@@ -8,16 +8,16 @@ console.log('\n\n\n');
 const movies = ['300','MI','Deadpool','Expendables', '3 Idiots', 'Inception'];
 console.log(movies);
 console.log(movies[1]);
-//TODO: indexOf is used to know the index of the name using the name we know 
+//TODO: indexOf is used to know the index of the something using the name we know 
 
 console.log(movies.indexOf('Inception'));
  
 
-//TODO: we use movies.at(index) just to find the index 
+//TODO: we use movies.at(index) just to find the element on that index 
 console.log(movies.at(-2));
 
 
-//TODO: we can change the const array elements but we cannot change its size of the array
+//TODO: we can change the const array elements but we cannot insert and remove
 movies[2] = 'Deadpool & Wolverine';
 
  
@@ -32,7 +32,7 @@ console.log(movies.slice(2));
 //FIXME: if we write the negative index  we start from the index and move right  
 console.log(movies.slice(-4,-2));
 
-// //
+// TODO: the first one will give [] and the second will give undefined
 // console.log(movies.slice(8));
 // console.log(movies[8]);
 
@@ -63,28 +63,5 @@ console.log(movies);
 // console.log(movies.splice(3,2,'Invincible'));
 // console.log(movies.splice(3,2,'John Wick','The Boys','Invincible'));
 console.log(movies.splice(3,0,'John Wick','The Boys','Invincible'));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 console.log(movies);
