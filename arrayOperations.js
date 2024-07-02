@@ -185,80 +185,114 @@
 
 //TODO: Level 3
 
-// Combining Arrays
-const array1 = ['a', 'b', 'c'];
-const array2 = ['d', 'e', 'f'];
+// // Combining Arrays
+// const array1 = ['a', 'b', 'c'];
+// const array2 = ['d', 'e', 'f'];
 
-// Combine array1 and array2 into a new array
- let combined = array1.splice();
- array2.forEach(element => {
-    combined.push(element);
- });
+// // Combine array1 and array2 into a new array
+//  let combined = array1.splice();
+//  array2.forEach(element => {
+//     combined.push(element);
+//  });
 
-// Finding Elements
-const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// // Finding Elements
+// const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 
-// Find the first number greater than 5 using find()
- const firstNum = numbers.find(num => num > 5);
- console.log(firstNum);
-// Filtering Arrays
-const mixedArray = [1, 'two', 3, 'four', 5, 'six', 7, 'eight', 9, 'ten'];
+// // Find the first number greater than 5 using find()
+//  const firstNum = numbers.find(num => num > 5);
+//  console.log(firstNum);
+// // Filtering Arrays
+// const mixedArray = [1, 'two', 3, 'four', 5, 'six', 7, 'eight', 9, 'ten'];
 
-// Filter out only the number elements from mixedArray using filter()
- const newArray = mixedArray.filter(num => typeof num === 'number');
- console.log(newArray);
+// // Filter out only the number elements from mixedArray using filter()
+//  const newArray = mixedArray.filter(num => typeof num === 'number');
+//  console.log(newArray);
 
-// Mapping Arrays
-const nums = [1, 2, 3, 4, 5];
+// // Mapping Arrays
+// const nums10 = [1, 2, 3, 4, 5];
 
-// Create a new array with each element squared using map()
-const newArray3 = nums.map(num => num **2);
-console.log(newArray3);
+// // Create a new array with each element squared using map()
+// const newArray3 = nums.map(num => num **2);
+// console.log(newArray3);
 
-// Reducing Arrays
-const nums2 = [1, 2, 3, 4, 5];
+// // Reducing Arrays
+// const nums2 = [1, 2, 3, 4, 5];
 
-// Find the sum of all elements in the numbers array using reduce()
-let sum  = nums2.reduce((acc,num)=> acc+ num,0);
-console.log(sum);
+// // Find the sum of all elements in the numbers array using reduce()
+// let sum  = nums2.reduce((acc,num)=> acc+ num,0);
+// console.log(sum);
 
-// Flattening Arrays
-const nestedArray = [1, [2, 3], [4, [5, 6]], 7, [8, 9]];
+// // Flattening Arrays
+// const nestedArray = [1, [2, 3], [4, [5, 6]], 7, [8, 9]];
 
-// Flatten the nestedArray to a single-level array using flat()
-console.log(nestedArray.flat(2));
+// // Flatten the nestedArray to a single-level array using flat()
+// console.log(nestedArray.flat(2));
 
-// Checking Conditions
-const numbers2 = [1, 2, 3, 4, 5];
+// // Checking Conditions
+// const numbers2 = [1, 2, 3, 4, 5];
 
-// Check if all elements in the numbers array are positive using every()
-console.log(numbers2.every(num => num > 0));
+// // Check if all elements in the numbers array are positive using every()
+// console.log(numbers2.every(num => num > 0));
 
-// Check if any element in the numbers array is greater than 4 using some()
-console.log(numbers2.some(num => num > 4));
+// // Check if any element in the numbers array is greater than 4 using some()
+// console.log(numbers2.some(num => num > 4));
 
-// Removing Duplicates
-const duplicatesArray = [1, 2, 2, 3, 4, 4, 5];
+// // Removing Duplicates
+// const duplicatesArray = [1, 2, 2, 3, 4, 4, 5];
 
-// Remove duplicates from duplicatesArray
+// // Remove duplicates from duplicatesArray
 
 
-// Reversing Words
-const sentence = 'Hello World!';
+// // Reversing Words
+// const sentence = 'Hello World!';
 
-// Reverse the order of words in the sentence
-let newSentence ;
+// // Reverse the order of words in the sentence
+// let newSentence ;
 
-// Finding the Longest String
-const strings = ['short', 'longer', 'longest', 'tiny'];
+// // Finding the Longest String
+// const strings = ['short', 'longer', 'longest', 'tiny'];
 
-// Find the longest string in the strings array
-let largest = strings[0].length;
-let largestElement = strings[0];
-strings.forEach((element) => {
-    if(element.length>largest){
-        largest = element.length;
-        largestElement = element;
-    }
-})
-console.log(largestElement);
+// // Find the longest string in the strings array
+// let largest = strings[0].length;
+// let largestElement = strings[0];
+// strings.forEach((element) => {
+//     if(element.length>largest){
+//         largest = element.length;
+//         largestElement = element;
+//     }
+// })
+//console.log(largestElement);
+
+ const nums = [36,19,10,2,6,13,48];
+// for(let i = 0; i<nums.length;i++){
+//     console.log(nums[i]);
+// }
+
+
+//For of 
+
+// for(let n of nums){
+//     console.log(n);
+// }
+
+//TODO: callback function are 
+// nums.forEach((element, index,wholeArray,forth) =>{
+//     console.log(forth);
+//     //console.log(index);
+// })
+
+// console.log(nums.map(num => num*num));
+
+
+const newArray = nums.filter(num => num%2 == 0);
+let newArray2 = [];
+
+console.log(newArray);
+
+// nums.forEach( (a) => {
+//     if(a%2 == 0){
+//        newArray2.push(a);  
+//     }
+// })
+
+// console.log(newArray2)
