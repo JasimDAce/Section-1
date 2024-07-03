@@ -83,20 +83,22 @@ const smartphone = [
     },
  
 ];
-// console.log(smartphone.length);
 
-// console.log(smartphone[1].price);
+//1. access the first smartphone price
+console.log(smartphone[1].price);
 
-// smartphone[2].colors.push('brown');
-// console.log(smartphone[2]);
-
-// const newArray = smartphone.map((n) => {return n.brand})
-// console.log(newArray)
-
-
-const filterArray = smartphone.filter((n)=>{return n.colors.includes('white')});
-console.log(filterArray);
-//access the first smartphone price
 //2. add new color in 3rd smartphone
-//create an array containing all the brands of smartphone
-//filter all smartphones containing white color
+smartphone[2].colors.push('brown');
+console.log(smartphone[2]);
+
+
+//3.create an array containing all the brands of smartphone
+const newArray = smartphone.map((n) => {return n.brand})
+console.log(newArray)
+
+//4. filter all smartphones containing white color
+const filterArray = smartphone.filter((n)=>{return n.colors.indexOf('white')+1});
+console.log(filterArray);
+
+
+
