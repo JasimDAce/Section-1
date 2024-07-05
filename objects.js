@@ -116,7 +116,7 @@ const keyword = 'Apple';
 const appleSmartPhone = smartphone.filter((phone) => { return phone.brand.toLocaleLowerCase() === keyword.toLocaleLowerCase()});
 console.log(appleSmartPhone);
 
-//TODO: we can match the substring of the user input 
+
 const appleSmartPhone2 = smartphone.filter((phone) => { return phone.brand.toLocaleLowerCase().includes(keyword.toLocaleLowerCase())});
 console.log(appleSmartPhone2);
 
