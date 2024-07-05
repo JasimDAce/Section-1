@@ -54,6 +54,20 @@ const smartphone = [
         ram : ['6GB','8GB']
     },
     { 
+        brand : 'Apple',
+        model : 'Iphone 15',
+        price : 59999,
+        colors : ['red','green','blue'],
+        ram : ['6GB','2GB']
+    },
+    { 
+        brand : 'samsung',
+        model : 's24 ultra',
+        price : 110000,
+        colors : ['white','gray','black'],
+        ram : ['2GB','8GB']
+    },
+    { 
         brand : 'samsung',
         model : 's24 ultra',
         price : 110000,
@@ -92,13 +106,44 @@ smartphone[2].colors.push('brown');
 console.log(smartphone[2]);
 
 
-//3.create an array containing all the brands of smartphone
-const newArray = smartphone.map((n) => {return n.brand})
-console.log(newArray)
 
 //4. filter all smartphones containing white color
 const filterArray = smartphone.filter((n)=>{return n.colors.indexOf('white')+1});
 console.log(filterArray);
 
+const keyword = 'Apple';
+
+const appleSmartPhone = smartphone.filter((phone) => { return phone.brand.toLocaleLowerCase() === keyword.toLocaleLowerCase()});
+console.log(appleSmartPhone);
+
+//TODO: we can match the substring of the user input 
+const appleSmartPhone2 = smartphone.filter((phone) => { return phone.brand.toLocaleLowerCase().includes(keyword.toLocaleLowerCase())});
+console.log(appleSmartPhone2);
 
 
+//3.create an array containing all the brands of smartphone
+const newArray = smartphone.map((n) => {return n.brand})
+console.log(new Set(newArray))
+console.log(Array.from('APPLE'));
+
+const brandName = smartphone.filter((phone) => {return phone.brand.indexOf(phone.brand)})
+console.log(brandName);
+
+
+let [brand,model,price] = ['Apple','Iphone 16', 79999];
+console.log(brand + ' ' + model + ' - ' + price );
+console.log(`${brand}`)
+
+
+const newArray3 = smartphone.map((phone , index) => {return `${index+1}. ${phone.brand} ${phone.model} - ${phone.price}`});
+console.log(newArray3);
+
+const newArray4 = smartphone.map((phone) => {return  phone.colors.map((col) => {return `${phone.brand} ${phone.model} `})}).flat();
+console.log(newArray4)
+
+// (white,128)
+
+const newArray5 = smartphone.map((phone) => {return  phone.colors.map((col) => {return phone.ram.map((ram) => {
+    {return `${phone.brand} ${phone.model} ${col} ${ram}`}
+})})}).flat(2);
+console.log(newArray5)

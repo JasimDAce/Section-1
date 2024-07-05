@@ -145,3 +145,30 @@ const products = [
 // 15. Sort the products array by price in descending order.
   products.sort((a,b) => {return b.price - a.price});
   console.log(products);
+
+
+  const numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+
+// 1. Filter out odd numbers from 'numbers' array
+// 2. Map 'numbers' array to an array of squared values
+// 3. Check if all numbers in 'numbers' array are less than 20
+// 4. Find the first even number in 'numbers' array using find
+// 5. Calculate the sum of all numbers in 'numbers' array using reduce
+// 6. Concatenate 'numbers' array with [11, 12, 13] using concat
+// 7. Remove the last 3 elements from 'numbers' array using splice
+// 8. Check if any number in 'numbers' array is greater than 10 using some
+// 9. Create a new array by flattening [[1, 2], [3, 4], [5, 6]] using flat
+// 10. Sort 'numbers' array in descending order using sort
+
+const books = [
+  { id: 1, title: 'Harry Potter', author: 'J.K. Rowling', year: 1997 },
+  { id: 2, title: 'The Lord of the Rings', author: 'J.R.R. Tolkien', year: 1954 },
+  { id: 3, title: 'To Kill a Mockingbird', author: 'Harper Lee', year: 1960 },
+  { id: 4, title: '1984', author: 'George Orwell', year: 1949 },
+];
+
+// 11. Extract titles of all books in 'books' array into a new array
+// 12. Find the book with the latest publication year using reduce
+// 13. Create a new array with books published after 1950 using filter
+// 14. Check if all books in 'books' array are written by different authors using every
+// 15. Find the index of the book titled '1984' in 'books' array using findIndex
